@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Main">
+   <children>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="527.0" spacing="15.0" style="-fx-background-color: #e0eee1;">
+         <children>
+            <Button fx:id="btn_analysis" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#openStatistics" onMouseEntered="#set_hover" onMouseExited="#set_hover" style="-fx-background-color: white; -fx-border-color: #00a705; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 10; -fx-text-fill: black;" text="Отчеты" textAlignment="CENTER" textFill="#00a705" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_add_task" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addItem" onMouseEntered="#set_hover" onMouseExited="#set_hover" style="-fx-background-color: white; -fx-border-color: #00a705; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 10; -fx-text-fill: black;" text="Создать" textAlignment="CENTER" textFill="#00a705" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fitToHeight="true" hbarPolicy="NEVER" pannable="true" prefHeight="500.0" prefViewportHeight="15.0" prefViewportWidth="616.0" prefWidth="616.0">
+         <content>
+            <VBox fx:id="field_goals" alignment="TOP_CENTER" prefWidth="527.0" spacing="25.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

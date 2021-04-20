@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameoverController">
+   <children>
+      <Button fx:id="toMenu" alignment="CENTER" contentDisplay="CENTER" layoutX="160.0" layoutY="432.0" mnemonicParsing="false" style="-fx-text-fill: green; -fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: green;" text="Menu" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="48.0" layoutY="76.0" prefHeight="114.0" prefWidth="307.0" style="-fx-text-fill: green;" text="Game over!" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreText" layoutX="147.0" layoutY="243.0" prefHeight="39.0" prefWidth="191.0" text="Score: " textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="recordText" layoutX="145.0" layoutY="300.0" prefHeight="39.0" prefWidth="191.0" text="Record: " textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="301.0" prefWidth="403.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Goal_add_score">
+   <children>
+      <HBox alignment="CENTER" prefWidth="403.0" spacing="15.0">
+         <children>
+            <TextField fx:id="input_count" alignment="CENTER" prefHeight="40.0" prefWidth="233.0" promptText="Единицы" style="-fx-background-color: white; -fx-border-color: green; -fx-border-width: 2; -fx-border-radius: 3; -fx-background-radius: 3;">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </TextField>
+            <Label fx:id="txt_task11" text="Единицы">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="btn_save" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#save_task" onMouseEntered="#set_hover" onMouseExited="#set_hover" style="-fx-background-color: white; -fx-border-color: #00a705; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 10; -fx-text-fill: black;" text="Сохранить" textAlignment="CENTER" textFill="#00a705" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

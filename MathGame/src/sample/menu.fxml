@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox fx:id="main" alignment="CENTER" prefHeight="600.0" prefWidth="400.0" style="-fx-spacing: 20; -fx-background-color: white;">
+         <children>
+            <Label style="-fx-text-fill: green;" text="Math Game">
+               <font>
+                  <Font name="Arial" size="46.0" />
+               </font>
+            </Label>
+            <HBox fx:id="H1" alignment="CENTER" prefHeight="150.0" prefWidth="400.0" style="-fx-spacing: 40;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="150.0" prefWidth="140.0">
+                     <children>
+                        <ToggleButton fx:id="modePlus" mnemonicParsing="false" prefHeight="134.0" prefWidth="140.0" selected="true" style="-fx-border-color: green; -fx-background-color: white; -fx-text-fill: green; -fx-border-radius: 15; -fx-background-radius: 15;" text="+">
+                           <font>
+                              <Font name="Arial" size="72.0" />
+                           </font>
+                        </ToggleButton>
+                        <Label fx:id="recPlus" text="Record: ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="150.0" prefWidth="140.0">
+                     <children>
+                        <ToggleButton fx:id="modeMinus" mnemonicParsing="false" prefHeight="134.0" prefWidth="140.0" style="-fx-border-color: green; -fx-background-color: white; -fx-text-fill: green; -fx-border-radius: 15; -fx-background-radius: 15;" text="-" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="72.0" />
+                           </font>
+                        </ToggleButton>
+                        <Label fx:id="recMin" text="Record: ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox fx:id="H2" alignment="CENTER" prefHeight="150.0" prefWidth="400.0" style="-fx-spacing: 40;">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="149.0" prefWidth="140.0">
+                     <children>
+                        <ToggleButton fx:id="modeMultipl" mnemonicParsing="false" prefHeight="134.0" prefWidth="140.0" style="-fx-border-radius: 15; -fx-border-color: green; -fx-background-color: white; -fx-text-fill: green; -fx-background-radius: 15;" text="*" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="72.0" />
+                           </font>
+                        </ToggleButton>
+                        <Label fx:id="recMult" text="Record: ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="147.0" prefWidth="140.0">
+                     <children>
+                        <ToggleButton fx:id="modeDivis" mnemonicParsing="false" prefHeight="134.0" prefWidth="140.0" style="-fx-border-radius: 15; -fx-border-color: green; -fx-background-color: white; -fx-text-fill: green; -fx-background-radius: 15;" text="/" textAlignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="72.0" />
+                           </font>
+                        </ToggleButton>
+                        <Label fx:id="recDiv" text="Record: ">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <Button fx:id="startGame" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" style="-fx-border-color: green; -fx-border-radius: 5; -fx-background-color: white; -fx-background-radius: 5;" text="Start game!" textAlignment="CENTER" textFill="green" wrapText="true">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</GridPane>

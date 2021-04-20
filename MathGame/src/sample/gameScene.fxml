@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="base" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameSceneController">
+   <children>
+      <VBox alignment="CENTER" layoutX="59.0" layoutY="63.0" prefHeight="470.0" prefWidth="283.0" style="-fx-spacing: 20;">
+         <children>
+            <Label fx:id="num1" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="78.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="operator" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="78.0" text="+" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="num2" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="78.0" text="0" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="78.0" text="=" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="input" alignment="CENTER" pickOnBounds="false" prefHeight="45.0" prefWidth="283.0" style="-fx-background-color: white; -fx-border-color: black;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <HBox fx:id="TimeField1" alignment="CENTER" layoutX="7.0" layoutY="6.0" prefHeight="44.0" prefWidth="139.0" style="-fx-padding: 5;">
+         <children>
+            <Label fx:id="scoreText" prefHeight="32.0" prefWidth="146.0" text="Score: ">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <HBox fx:id="TimeField" alignment="CENTER" layoutX="255.0" layoutY="6.0" prefHeight="44.0" prefWidth="139.0" style="-fx-padding: 5;" />
+   </children>
+</AnchorPane>

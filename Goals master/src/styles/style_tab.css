@@ -1,0 +1,13 @@
+.tab {
+    -fx-background-color: white;
+    -fx-border-color: #00a705;
+    -fx-background-radius: 5 5 0 0;
+    -fx-border-radius: 5 5 0 0;
+    -fx-font: 17 Arial;
+    -fx-font-weight: bold;
+    -fx-border-width: 3;
+    -tab-text-color: -fx-text-base-color ;
+}
+.tab .tab-label {
+    -fx-text-fill: -tab-text-color;
+}

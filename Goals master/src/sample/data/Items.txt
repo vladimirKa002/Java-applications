@@ -1,0 +1,4 @@
+[{name=Goal};{text=687};{count=5};{completed=0};{deadline=2021-03-04};{additional_info=2}]
+[{name=Goal};{text=752};{count=72};{completed=0};{deadline=2021-03-11};{additional_info=}]
+[{name=Goal};{text=72};{count=752};{completed=0};{deadline=2021-03-04};{additional_info=72}]
+[{name=Goal};{text=752};{count=752};{completed=0};{deadline=2021-03-13};{additional_info=72}]

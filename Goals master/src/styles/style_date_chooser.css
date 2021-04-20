@@ -1,0 +1,11 @@
+.date-picker:editable > .arrow-button > * {
+    -fx-opacity: 0; /* Set the node in the button to be visible */
+}
+
+.date-picker > .arrow-button {
+    -fx-background-color: green;
+    -fx-border-color: green;
+    -fx-background-image: url("icons/calendar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}

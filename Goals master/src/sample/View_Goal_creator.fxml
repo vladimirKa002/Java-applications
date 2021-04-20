@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="507.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Goal_Creator">
+   <children>
+      <HBox alignment="CENTER" prefWidth="403.0" spacing="15.0">
+         <children>
+            <TextField fx:id="input_text" prefHeight="40.0" prefWidth="233.0" promptText="Задание" style="-fx-background-color: white; -fx-border-color: green; -fx-border-width: 2; -fx-border-radius: 3; -fx-background-radius: 3;">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </TextField>
+            <Label fx:id="txt_task1" prefHeight="63.0" prefWidth="170.0" text="Текст цели" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="403.0" spacing="15.0">
+         <children>
+            <TextField fx:id="input_count" prefHeight="40.0" prefWidth="233.0" promptText="Единицы" style="-fx-background-color: white; -fx-border-color: green; -fx-border-width: 2; -fx-border-radius: 3; -fx-background-radius: 3;">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </TextField>
+            <Label fx:id="txt_task11" prefWidth="170.0" text="Единицы">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="403.0" spacing="15.0">
+         <children>
+            <DatePicker fx:id="input_deadline" prefHeight="40.0" prefWidth="233.0" style="-fx-border-color: green; -fx-border-width: 1; -fx-background-color: green; -fx-border-radius: 3; -fx-background-position: center; -fx-font: 18 Arial;" stylesheets="@../styles/style_date_chooser.css" />
+            <Label fx:id="txt_task111" prefWidth="170.0" text="Дедлайн">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="403.0" spacing="15.0">
+         <children>
+            <TextArea fx:id="input_text_add_i" prefHeight="150.0" prefWidth="233.0" promptText="Информация" style="-fx-background-color: white; -fx-border-color: green; -fx-border-width: 2; -fx-border-radius: 3; -fx-background-radius: 3;" wrapText="true">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="txt_task112" prefWidth="170.0" text="Информация" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="btn_create_task" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#do_changes" onMouseEntered="#set_hover" onMouseExited="#set_hover" style="-fx-background-color: white; -fx-border-color: #00a705; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 10; -fx-text-fill: black;" text="Сохранить" textAlignment="CENTER" textFill="#00a705" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>

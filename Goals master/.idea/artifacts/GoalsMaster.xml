@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="GoalsMaster">
+    <output-path>$PROJECT_DIR$/out/artifacts/GoalsMaster</output-path>
+    <root id="root">
+      <element id="archive" name="GoalsMaster.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/MANIFEST/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Goals master" />
+      </element>
+    </root>
+  </artifact>
+</component>

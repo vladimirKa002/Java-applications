@@ -1,0 +1,2 @@
+[{name=Goal};{completed=1};{amount=1};{text=Закончить семестр на средний балл > 4.8};{deadline=2020-12-31};{date_finished=2020-12-31}]
+[{name=Goal};{completed=237000};{amount=300000};{text=Заработать (руб).};{deadline=2020-12-31};{date_finished=2020-12-31}]
