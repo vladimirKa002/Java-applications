@@ -4,6 +4,8 @@ This game is a logic game and an analog of the well-known Minesweeper. The objec
 
 **Calculator**
 
+![Calculator img](https://drive.google.com/file/d/11ho7P9VyEeWmfcdFcn0HVgjKT3KVETjW/view?usp=sharing)
+
 Analogue of Windows calculator developed using Java Swing library.
 
 **Goals master**
