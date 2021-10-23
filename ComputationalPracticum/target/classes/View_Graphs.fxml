@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="595.0" prefWidth="1450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller_Graphs">
+   <children>
+      <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="543.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab closable="false" text="Graphs &amp; Local Error">
+               <content>
+                  <GridPane>
+                     <children>
+                        <VBox fx:id="Panel_LocalErr" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="2">
+                           <children>
+                              <VBox prefWidth="250.0" spacing="10.0">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" text="xₒ (x value of IVP)">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Input_x0" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="-4" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox prefWidth="250.0" spacing="10.0">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" text="yₒ (y value of IVP)">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Input_y0" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="1" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox prefWidth="250.0" spacing="10.0">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" text="X">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Input_X" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="4" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox prefWidth="250.0" spacing="10.0">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" text="N">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Input_N" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="100" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <GridPane fx:id="ChartBox_Graphs">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                        <GridPane fx:id="ChartBox_LocalErr" GridPane.columnIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Global Error">
+               <content>
+                  <GridPane>
+                     <children>
+                        <VBox fx:id="Panel_GlobalErr" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="1">
+                           <children>
+                              <VBox prefWidth="250.0" spacing="10.0">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" text="nₒ">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Input_n0" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="10" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                              <VBox prefWidth="250.0" spacing="10.0">
+                                 <children>
+                                    <Label minHeight="-Infinity" minWidth="-Infinity" text="N">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="Input_NGlob" maxWidth="210.0" minWidth="210.0" prefWidth="210.0" text="100" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                        <GridPane fx:id="ChartBox_GlobalErr">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="250.0" prefWidth="250.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <GridPane alignment="CENTER" prefHeight="57.0" prefWidth="940.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Plot" text="Plot" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <GridPane alignment="CENTER" minWidth="690.0" prefHeight="100.0" prefWidth="690.0" GridPane.columnIndex="1">
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                     <children>
+                        <CheckBox fx:id="CheckBox_Analyt" mnemonicParsing="false" onAction="#ShowAnalytical" selected="true" text="Analytical" textAlignment="CENTER">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                           <graphic>
+                              <Circle fill="#00eb3f" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </CheckBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.rowIndex="1">
+                     <children>
+                        <CheckBox fx:id="CheckBox_Euler" mnemonicParsing="false" onAction="#ShowEuler" selected="true" text="Euler Method" textAlignment="CENTER">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <graphic>
+                              <Circle fill="#ffaf00" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </CheckBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1">
+                     <children>
+                        <CheckBox fx:id="CheckBox_ImprEuler" mnemonicParsing="false" onAction="#ShowImprEuler" selected="true" text="Improved Euler Method" textAlignment="CENTER">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <graphic>
+                              <Circle fill="#3000ff" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </CheckBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <CheckBox fx:id="CheckBox_RungeKutta" mnemonicParsing="false" onAction="#ShowRungeKutta" selected="true" text="Runge-Kutta Method" textAlignment="CENTER">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <graphic>
+                              <Circle fill="RED" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                           </graphic>
+                        </CheckBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Label fx:id="Label_Function" text="-" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </GridPane>
+   </children>
+</VBox>

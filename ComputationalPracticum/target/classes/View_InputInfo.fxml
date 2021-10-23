@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints valignment="TOP" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox>
+         <children>
+            <TextFlow>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Please read carefully ">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="the requirements for writing equations!">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="It's necessary to input ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="f(x, y)" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=", ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="its solution y" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=", and ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="expression that identifies constant C" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text=".">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="In order to obtain correct results of computations you have to follow these rules of the form of your input:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• Terms with ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MINUS" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" sign in such functions as sin, cos, tg, etc, and power (^) have to be written in parenthesis. For example, ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ln (" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-9" underline="true">
+                       <font>
+                           <Font name="System Bold" size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=")" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" or ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="(7)^(" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="-2" underline="true">
+                       <font>
+                           <Font name="System Bold" size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=")" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• You should use the following notations for constants and variables: ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="x, y, c, e, pi" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="• The list of available functions and operations is below:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="+, -, *, /, ^, ln, lg, sin, cos, tg, ctg, sec, csc, asic, acos, atan" underline="true">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </TextFlow>
+            <TextFlow>
+               <children>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Note, that for trigonometric functions the input and output is in ">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="radians" underline="true">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text=".">
+                       <font>
+                           <Font size="19.0" />
+                       </font>
+                   </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </TextFlow>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>

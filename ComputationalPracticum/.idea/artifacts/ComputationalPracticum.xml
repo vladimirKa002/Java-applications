@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact name="ComputationalPracticum">
+    <output-path>$PROJECT_DIR$/out/artifacts/ComputationalPracticum</output-path>
+    <root id="root">
+      <element id="archive" name="ComputationalPracticum.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="ComputationalPracticum" />
+        <element id="library" level="project" name="Maven: org.json:json:20180130" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:11.0.1" />
+        <element id="library" level="project" name="Maven: org.openjfx:javafx-base:11.0.1" />
+      </element>
+    </root>
+  </artifact>
+</component>

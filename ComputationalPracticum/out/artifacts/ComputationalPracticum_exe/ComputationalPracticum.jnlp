@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ComputationalPracticum.jnlp">
+  <information>
+    <title>ComputationalPracticum_exe</title>
+    <vendor>Unknown</vendor>
+    <description>ComputationalPracticum_exe</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ComputationalPracticum.jar" size="24464" download="eager" />
+    <jar href="javafx-base-11.0.1-win.jar" size="750046" download="eager" />
+    <jar href="javafx-base-11.0.1.jar" size="302" download="eager" />
+    <jar href="javafx-controls-11.0.1-win.jar" size="2511136" download="eager" />
+    <jar href="javafx-controls-11.0.1.jar" size="306" download="eager" />
+    <jar href="javafx-fxml-11.0.1-win.jar" size="127394" download="eager" />
+    <jar href="javafx-fxml-11.0.1.jar" size="302" download="eager" />
+    <jar href="javafx-graphics-11.0.1-win.jar" size="6019483" download="eager" />
+    <jar href="javafx-graphics-11.0.1.jar" size="306" download="eager" />
+    <jar href="json-20180130.jar" size="62116" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="sample.Main"  name="ComputationalPracticum_exe" />
+  <update check="background"/>
+</jnlp>

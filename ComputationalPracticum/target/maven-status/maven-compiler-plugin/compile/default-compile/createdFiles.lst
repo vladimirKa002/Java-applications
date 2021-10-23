@@ -1,0 +1,11 @@
+sample\Function.class
+sample\ImprovedEuler.class
+sample\Method.class
+sample\Euler.class
+sample\Analytical.class
+sample\Controller_Graphs.class
+sample\MalformedExpressionException.class
+sample\Main.class
+sample\Controller_FunctionsInput.class
+sample\MainWrapper.class
+sample\RungeKutta.class

@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'ComputationalPracticum.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedComputationalPracticum_id() {
+        dtjava.embed(
+            {
+                id : 'ComputationalPracticum_id',
+                url : 'ComputationalPracticum.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedComputationalPracticum_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>ComputationalPracticum_exe</b></h2>
+  <b>Webstart:</b> <a href='ComputationalPracticum.jnlp' onclick="return launchApplication('ComputationalPracticum.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
