@@ -1,0 +1,3 @@
+[submodule "tanks-game"]
+	path = tanks-game
+	url = https://github.com/vladimirKa002/tanks-game.git
